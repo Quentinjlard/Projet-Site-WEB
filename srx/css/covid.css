@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2? family = Andika + Nouveau + Basique & display = swap');
+
+*{
+  text-align: center;
+}
+
+.covidtitre{
+    font-size: 250%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#demo{
+    color: black;
+    font-size: 25px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    
+}
+
+.bouton{
+  margin-bottom: 2%;
+}
+
+.sep{
+   color: black;
+}
+
+.maj{
+    text-align: center;
+    border: black;
+    border-radius: 50px;
+    border-width:5px;
+    border-style:outset;  
+    border-color:#100E3E;
+    margin-left: 2%; 
+    margin-right: 2%; 
+    margin-bottom: 1%;
+}
+
+#image{
+  border: solid black 10px;
+  border-radius: 50px;
+  border-width:5px;
+}
+
+/*.imagec{
+    font-size: 150%;
+    padding-top: 100px;
+    justify-content: center;
+}*/
+
+.texteimagedroite{
+    padding-left:10px ;
+    color: black;
+    padding-left: 5%;
+    padding-top: 15%;
+    font-size: 80%;
+}
+
+.case1{
+    color: black;
+    text-justify: auto;
+    padding-right: 5%;
+    font-size: 80%;
+    padding-top: 15%;
+}
+
+#text{
+  color: green;
+  
+}
+
+
+/*.actua{
+    padding-top: 60px;
+    justify-content: center;
+}*/
+
+#img1{
+    font-size: 300%;
+  
+}
+
+table{
+  margin:auto;
+}
+td,tr{
+  font-size: 150%;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.titreactu{
+    color: black;
+    font-size: 150%;
+    border-radius: 50px;
+    border-width:5px;
+    border-style:outset;  
+    border-color:#100E3E;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 100px;
+}
+
+.tabactu{
+    padding-top: ;
+    padding-left: 2%;
+}
+
+.quizztitre{
+    color: black;
+    font-size: 150%;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.qquizz{
+    color: black;
+    font-size: 20px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.boutonquizz{
+    text-align: center;
+    padding-top: 35px;
+}
+
+#quiz{
+    text-align: center;
+    color: green;
+    font-size: 110%;
+    padding-top: 15px;
+}
+
+#quiz2{
+    text-align: center;
+    color: green;
+    font-size: 110%;
+    padding-top: 15px;
+}
+
+#quiz3{
+    text-align: center;
+    color: green;
+    font-size: 110%;
+    padding-top: 15px;
+}
+
+
+
+
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+      
+    box-sizing: border-box;
+  }
+    
+  body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    
+  /*NAVIGATION*/
+  .header{
+    width:100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
+    line-height: 70px;
+    background-color: black;
+    position: relative;
+    padding: 0px;
+    transition: background-color 400ms linear;
+    z-index: 0;
+    
+  }
+    
+  header .scrolled {
+    position: fixed;
+      
+    top: 0;
+    left: 0;
+    right: 0;
+      
+    background-color: grey;
+  }
+    
+  header .scrolled + .content {
+    margin-top: 10px;
+  }
+    
+  content {
+    flex: 1;
+  }
+    
+  .content div {
+    margin-bottom: 10px;
+  }
+    
+  .header .header-logo{
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    margin-left: 30px;
+  }
+    
+    .header .header-menu{
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 30px;
+  }
+    
+  .header .header-menu a {
+    margin-right: 15px;
+    color: #ffffff;
+  }
+    
+  .header-menu a:hover{
+    color: #BF0413;
+  }
+    
+    
+  .header-menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+  }
+  
+  .header-menu li {
+    float:left;
+    margin:auto;
+    padding:0;
+    background-color:black;
+  }
+  
+  .header-menu li a {
+    display:block;
+    width:100px;
+    color:white;
+    text-decoration:none;
+    padding:0px;
+  }
+  
+  .header-menu li a:hover {
+    color:aqua;
+  }
+  
+  .header-menu ul li ul {
+    display:none;
+  }
+  
+  .header-menu ul li:hover ul {
+    display:block;
+  }
+  
+  .header-menu li:hover ul li {
+    float:none;
+  }
+  
+  .header-menu li ul {
+    position:absolute;
+  }
+  
+  .header-menu {
+    height:100px;
+  }
+    /*FIN  NAVIGATION*/
+  
+    

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr" fir="ltr">
+    <header>
+        <meta charset="utf-8">
+        <title> PNL</title>
+    
+        <!--- CSS & JS--->
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link rel="stylesheet" href="../srx/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../srx/css/teamplate.css">
+        <link rel="stylesheet" href="../srx/css/artiste2.css">
+        
+        
+    
+        <!--- END CSS ---->
+    
+        <!--FONT-->
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 300; 400; 700 & display = swap "rel =" styleheet ">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <!--END FONT-->
+    
+        <!--meta SEO-->
+        <meta name="autheur" content="Quentin JUILLIARD & Corentin NIARQUIN">
+        <meta name="description" content="description du site! METTRE DES MOTS CLES!">
+        <meta name="keyswords" content="A COMPLETER">
+        <!--meta SEO-->
+        <!--MOBILE-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--MOBILE-->
+    </header>
+    
+    <body>
+    
+    <!--Navigation-->
+    <div class="block"> 
+      <header class="header">
+        <a href="../index.html" class="header-logo">Site artiste</a>
+            <nav class="header-menu">
+                <ul>
+                    <li><a href="../index.html">Acceuil</a></li>
+                    <li><a href="js.html">divers</a></li>
+                    <li><a href="../page/concert.html">Concerts</a></li>
+                    <li><a href="#">Nos artistes</a>
+                      <ul>
+                        <li><a href="../page/artiste1.html">Freeze Corleone</a></li>
+                        <li><a href="../page/artiste2.html">PNL</a></li>
+                        <li><a href="#">Artiste 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="covid.html">COVID-19</a></li>
+                    <li><a href="../TP-003/tp003.html">Localisation</a></li>
+                </ul>
+        </nav>
+    </header>
+    </div>
+    <!--Fin Navigation-->
+    
+    <!--Baniere-  class="title is-1" -->
+    <div class="block">
+      <div class="banner">
+        <img src="../srx/imageartiste2/bg.jpg" alt="Personne qui conduit une voiture" class="banner-image">
+        <div class="banner-content">
+          <h1 class="TITRE" >PNL</h1>
+        </div>
+      </div>
+    </div>
+    <!--Fin Baniere-->
+    <!--Fin Bouton changement de mode -->
+    <div class="block">
+      <div class="container">
+          <a href="#" class="btn" onclick="fond()" id="theme"><span></span></a>
+          
+          <div class="changement">
+            <div class="blanc" onclick="chargement(event);">Changer de mode</div>
+            <div class="Mode-Noir"></div>
+          </div>
+          
+
+        </div>
+      </div>
+    </br></br></br>
+    <!--Bouton changement de mode -->
+    <!--Qui sont PNL-->
+    <div class="block">
+        <h2 id="objectif" class="subtitle heading-site">Qui sont PNL?</h2>
+        <div class="container">
+          <div class="h-separator">
+            <hr class="separator">
+          </div>
+          <table class="pnl">
+                <tr>
+                    <td>
+                        <p class="pnl-bio">
+                            <br/><br/>
+                            PNL (sigle de Peace N’ Lovés) est un groupe de rap français, composé de deux frères, Ademo et N.O.S (de leurs vrais noms Tarik et Nabil Andrieu), originaires de la cité des Tarterêts à Corbeil-Essonnes. <br/><br/>
+
+                            Le groupe se caractérise par une absence totale d'interviews dans la presse, ainsi que par des clips cinématographiques novateurs en France, tournés à travers le monde (Japon, États-Unis, Italie, Islande, Afrique du Sud, Namibie, Jamaïque…) dès ses débuts en 2015.<br/><br/>
+                            
+                            Ils publient leur premier album studio, Le Monde Chico, en 2015, suivi de Dans la légende en 2016 et Deux frères en 2019, avec lequel ils remportent le prix de la « meilleure création audiovisuelle » lors de l'édition 2020 des Victoires de la musique, pour le clip Au DD.</p>
+                      
+                    </td>
+                    <td width="325em">
+                      <img data-tooltip="PNL" src="../srx/imageartiste2/deuxfrere.jpg" alt="">
+                    </td>
+                </tr>
+          </table>
+        </div>
+      </div>
+    <!--FIN Qui sont PNL-->
+
+    <!--Ademo -->
+    <div class="block">
+        <h2 id="objectif" class="subtitle heading-site">Qui est Ademo?</h2>
+        <div class="container">
+          <div class="h-separator">
+            <hr class="separator">
+          </div>
+          <table class="ademo">
+              <tr>
+                <td width="150em">
+                    <img data-tooltip="Ademo" src="../srx/imageartiste2/ademo.jpg" alt="">
+                </td>
+                <td>
+                    <p class="pnl-bio">
+                        <br/>
+                            Tarik Andrieu est connu sous le nom d'Ademo. <br/>
+                            Il naît le 26 décembre 1986. <br/>
+                            Il est l'un des deux membres du groupe de rap français PNL (Peace N' Lovés) créé en 2014.  <br/>
+                            Les frères y font leurs études et Tarik passe un BEP électrotechnique puis son baccalauréat à Tulle.<br/>
+                    </p>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    <!--FIN Ademo -->
+
+
+    <!--NOS-->
+    <div class="block">
+        <h2 id="objectif" class="subtitle heading-site">Qui est NOS?</h2>
+        <div class="container">
+          <div class="h-separator">
+            <hr class="separator">
+          </div>
+          <table class="ademo">
+              <tr>
+                <td>
+                    <p class="pnl-bio">
+                        <br/>
+                            Nabil Andrieu est connu sous le nom d'N.O.S. <br/>
+                            Il naît le 25 avril 1989. <br/>
+                            Il est l'un des deux membres du groupe de rap français PNL (Peace N' Lovés) créé en 2014.  <br/>
+                            Les frères y font leurs études et Tarik passe un BEP électrotechnique puis son baccalauréat à Tulle.<br/>
+                    </p>
+                </td>
+                <td width="150em">
+                    <img data-tooltip="PNL" src="../srx/imageartiste2/deuxfrere.jpg" alt="">
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    <!--FIN NOS-->
+
+    <!-- Discography-->
+    <div class="block">
+        <h2 id="objectif" class="subtitle heading-site">Discography</h2>
+        <div class="container">
+          <div class="h-separator">
+            <hr class="separator">
+          </div>
+          <table class="Discography">
+            <tr>
+                <td width="150em"> Pochette d'album<br/></td>
+                <td> Titre - Date de parution - Label - Auteur - Certification<br/></td>
+                <td width="150em">Certification</td>
+            </tr>
+            <tr>
+                <td><img src="../srx/imageartiste2/quelamiff.jpg" alt="" data-tooltip="Que la famille"></td>
+                <td>
+                    <br/>
+                    <B>Que la famille</B><br/>
+                    Paru: le 2 mars 2015<br/>
+                    Label: QLF Records<br/>
+                    Auteur: PNL <br/>
+                    Certification France: Platine<br/>
+                </td>
+                <td><img class="certification" src="../srx/imageartiste2/platinequelafamille.jpg_large" alt="" data-tooltip="Que la famille Disque de Platine"></td>
+            </tr>
+            <tr>
+                <td><img src="../srx/imageartiste2/lemondechico.png" alt="" data-tooltip="Le monde chico"></td>
+                <td>
+                    <br/>
+                    <B>Le monde chico</B><br/>
+                    Paru: le 30 octobre 2015<br/>
+                    Label: QLF Records<br/>
+                    Auteur: PNL <br/>
+                    Certification France: triple Platine<br/>
+                </td>
+                <td><img class="certification" src="../srx/imageartiste2/tripleplatinechico.jpg" alt="" data-tooltip="Le monde chico Certification France: triple Platine"></td>
+            </tr>
+            <tr>
+                <td><img src="../srx/imageartiste2/danslalgende.jfif" alt="" data-tooltip="Dans la légende"></td>
+                <td>
+                    <br/>
+                    <B>Dans la légende</B><br/>
+                    Paru: le  16 septembre 2016<br/>
+                    Label: QLF Records<br/>
+                    Auteur: PNL <br/>
+                    Certification France: Diamant<br/>
+                    Certification Monde: Diamant<br/>
+                </td>
+                <td><img class="certification" src="../srx/imageartiste2/diamentlengende.jpg" alt="" data-tooltip="Dans la légende Certification France: DiamentCertification Monde: Diament"></td>
+            </tr>
+            <tr>
+                <td><img src="../srx/imageartiste2/deuxfrere.jfif" alt="" data-tooltip="Deux fréres"></td>
+                <td>
+                    <br/>
+                    <B>Deux fréres</B><br/>
+                    Paru: le  5 avril 2019<br/>
+                    Label: QLF Records<br/>
+                    Auteur: PNL <br/>
+                    Certification France: Diamant<br/>
+                </td>
+                <td><img class="Certification" src="../srx/imageartiste2/diamentdeuxfrere.jpg" alt="" data-tooltip="Deux fréres Diament"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    <!--Fin Discography-->
+
+    <!--Les albums-->
+
+    <div class="block">
+        <h2 id="objectif" class="subtitle heading-site">Ecouter les albums</h2>
+        <div class="container">
+          <div class="h-separator">
+            <hr class="separator">
+          </div>
+          <div class="columns">
+            <div class="column">
+              Que la famille
+              <button class="accordion">Ecouter!</button>
+                <div class="panel">
+                    <iframe src="https://open.spotify.com/embed/album/2LOyzVRA6BJgfgGxQj21O1" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            <div class="column">
+              Le monde chico
+              <button class="accordion">Ecouter!</button>
+                <div class="panel">
+                    <iframe src="https://open.spotify.com/embed/album/0OrjrvwmdJ82zYJpJ46lUs" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            <div class="column">
+              Dans la légende
+              <button class="accordion">Ecouter!</button>
+              <div class="panel">
+                <iframe src="https://open.spotify.com/embed/album/6axBxUXvSfVkbiBU6AH3jH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            </div>
+            <div class="column">
+              Deux fréres
+              <button class="accordion">Ecouter!</button>
+              <div class="panel">
+                <iframe src="https://open.spotify.com/embed/album/0VbjQH6iXN5VdE0OX35cpD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    <!--les albums-->
+
+    <!--Titre certifié-->
+
+    <div class="block">
+        <h2 id="objectif" class="subtitle heading-site">Titre certifié</h2>
+        <div class="container">
+          <div class="h-separator">
+            <hr class="separator">
+          </div>
+          <table class="titre-certifier">
+              <tr>
+                    <td>Album</td>
+                    <td>Titre</td>
+                    <td>Certification</td>
+                    <td width="150em">Pochette album</td>
+              </tr>
+              <tr>
+                    <td><B>Que la famille</B></td>
+                    <td>Je vis, je visser</td>
+                    <td><div class="Or">Or<br/></div></td>
+                    <td><img src="../srx/imageartiste2/quelamiff.jpg" alt=""></td>
+              </tr>
+              <td COLSPAN="4"> 
+                <hr>
+              </td>
+              <tr>
+                    <td><B>Le monde chico</B></td>
+                    <td>
+                        Le monde ou rien<br/>
+                        Sur Paname<br/>
+                        Oh lala<br/>
+                        J'vend<br/>
+                        Abonné<br/>
+                        Mexico<br/>
+                        Dans ta rue<br/>
+                        Rebenga<br/>
+                        Que la miff<br/>
+                    </td>
+                    <td>
+                        <div class="Platine">Platine<br/></div>
+                        <div class="Or">Or<br/></div>
+                        <div class="Platine">Platine<br/></div>
+                        <div class="Or">Or<br/></div>
+                        <div class="Or">Or<br/></div>
+                        <div class="Or">Or<br/></div>
+                        <div class="Or">Or<br/></div>
+                        <div class="Platine">Platine<br/></div>
+                        <div class="Or">Or<br/></div>
+                    </td>
+                    <td><img src="../srx/imageartiste2/lemondechico.png" alt=""></td>
+              </tr>
+              <td COLSPAN="4"> 
+                <hr>
+              </td> 
+              <tr>
+                <td><B>Dans la légende</B></td>
+                <td>
+                    DA<br/>
+                    Naha<br/>
+                    Dans la legende<br/>
+                    Mira<br/>
+                    J'suis QLF<br/>
+                    La vie est belle<br/>
+                    Kratos<br/>
+                    Luz luna<br/>
+                    Tu sais pas<br/>
+                    Sheita<br/>
+                    Humain<br/>
+                    Bambina<br/>
+                    Bené<br/>
+                    Uranus<br/>
+                    Onizuka<br/>
+                    Jusqu'au dernier gramme<br/>
+                </td>
+                <td>
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Platine">Platine<br/></div>  
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Platine">Platine</div> 
+                    <div class="Platine">Platine</div> 
+                    <div class="Platine">Platine</div> 
+                    <div class="Or">Or<br/></div>
+                    <div class="Platine">Platine<br/></div> 
+                    <div class="Platine">Platine<br/></div> 
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Platine">Platine<br/></div> 
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Diament">Diamant<br/></div>
+                </td>
+                <td><img src="../srx/imageartiste2/danslalgende.jfif" alt=""></td>
+              </tr>
+              <td COLSPAN="4"> 
+                <hr>
+              </td>
+              <tr>
+                  <td><B>Deux frères</B></td>
+                  <td>
+                    Au DD<br/>
+                    Autre monde<br/>
+                    Chang <br/>
+                    Blanka <br/>
+                    91's <br/>
+                    À l'ammoniaque<br/> 
+                    Celsius <br/>
+                    Deux frères <br/>
+                    Hasta la Vista <br/>
+                    Cœurs <br/>
+                    Shenmue<br/>
+                    Kuta Ubud <br/>
+                    Menace <br/>
+                    Zoulou <br/>
+                    Déconnecté <br/>
+                    La misère est si belle <br/>
+                    Comme pas deux <br/>
+                  </td>
+                  <td>
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Platine">Platine<br/></div>
+                    <div class="Platine">Platine<br/></div>
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Diament">Diamant<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Platine">Platine<br/></div>
+                    <div class="Platine">Platine<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Platine">Platine<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Or">Or<br/></div>
+                    <div class="Or">Or<br/></div>
+                  </td>
+                  <td><img src="../srx/imageartiste2/deuxfrere.jfif" alt=""></td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+    <!--Fin Titre certifié-->
+    <a href="#">
+        <img src="../srx/imageartiste2/images.png"  type="button" value="remonter" id="haut"  alt="">
+    </a>
+    <!--PIED DE PAGE-->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <strong>Site artiste</strong> par Quentin JUILLIARD & Corentin NIARQUIN</a>. <br/>
+            Le code source est sous licence <a href="http://opensource.org/licenses/mit-license.php"><i class="fas fa-copyright"></i></a>. <br/>
+            Le contenu du site Web est sous licence <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fas fa-copyright"></i></a>. <br/>
+          </p>
+        </div>
+      </footer>
+    <!--FIN DU PIED DE PAGE-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../srx/javascript/artiste2.js"></script>
+    </body>
+</html>

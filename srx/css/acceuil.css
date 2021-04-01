@@ -1,0 +1,75 @@
+.separator{
+    height: 3px;
+    width:5%;
+    border:none;
+    box-shadow: none;
+    background-color: black;
+    justify-content: center;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+.acceuil-separator{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+}
+
+
+body{
+    text-align: center;
+}
+
+
+/* Banniere */
+
+.banner{
+    margin-top: -20px ;
+}
+  
+.banner .banner-image{
+    position: relative;
+    margin-top: -40px;
+}
+  
+.banner .banner-content{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -280px;
+}
+  
+.banner .banner-content h1{
+    color: white ;
+}
+
+
+/*--------GALE RIE IMAG----------- */
+.galerie{
+    width: 70%;
+    height: 400px;
+    position: relative;
+    left: 16%;
+    right: 0%;
+    background-image: url('https://cdn.radiofrance.fr/s3/cruiser-production/2019/11/249f6fb8-3b12-4501-8dc6-52d8c15abce5/870x489_080_hl_uguttmann_876033.jpg');
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 10px black;
+    animation: slide 30s infinite linear;
+}
+
+@keyframes slide{
+    0%{ 
+        background-image: url('https://cdn.radiofrance.fr/s3/cruiser-production/2019/11/249f6fb8-3b12-4501-8dc6-52d8c15abce5/870x489_080_hl_uguttmann_876033.jpg');
+    }
+    35%{ 
+        background-image: url('https://statics-infoconcert.digitick.com/media/a_effacer/jarv-is_visunews.jpg');
+    }
+    75%{ 
+        background-image: url('https://www.soonnight.com/images/upload/contenu/photos/2019/06/19/celinedion-1055.jpg');
+    }
+}

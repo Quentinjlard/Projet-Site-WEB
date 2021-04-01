@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr" fir="ltr">
+    <header>
+        <meta charset="utf-8">
+        <title> Animation délire</title>
+    
+        <!--- CSS--->
+        <link rel="stylesheet" href="../srx/css/teamplate.css">
+        <link rel="stylesheet" href="../srx/css/js.css">
+        <script src="../srx/javascript/js.js" defer></script>
+    
+        <!--- END CSS ---->
+    
+        <!--FONT-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <!--END FONT-->
+    
+        <!--meta SEO-->
+        <meta name="autheur" content="Quentin JUILLIARD & Corentin NIARQUIN">
+        <meta name="description" content="description du site! METTRE DES MOTS CLES!">
+        <meta name="keyswords" content="A COMPLETER">
+        <!--meta SEO-->
+        <!--MOBILE-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--MOBILE-->
+    </header>
+    
+    <body>
+    
+
+    <!--Navigation-->
+    <div class="block"> 
+        <header class="header">
+          <a href="../index.html" class="header-logo">Site artiste</a>
+              <nav class="header-menu">
+                  <ul>
+                      <li><a href="../index.html">Acceuil</a></li>
+                      <li><a href="js.html">divers</a></li>
+                      <li><a href="../page/concert.html">Concerts</a></li>
+                      <li><a href="#">Nos artistes</a>
+                        <ul>
+                          <li><a href="../page/artiste1.html">Freeze Corleone</a></li>
+                          <li><a href="../page/artiste2.html">PNL</a></li>
+                          <li><a href="#">Artiste 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="covid.html">COVID-19</a></li>
+                      <li><a href="../TP-003/tp003.html">Localisation</a></li>
+                  </ul>
+          </nav>
+      </header>
+      </div>
+    <!--Fin Navigation-->
+
+    <!--Animation 1-->
+
+    <div class="contenaire">
+        <h2 class="titre">Animation n°1</h2>
+    </div>    
+
+    <div class="animation-1">
+        <button id="Buttonrecommencer" onclick="lancerpartie()">Jouer</button><br/>
+        <button id="Buttonrecommencer" onclick="lancerpartie()">Recommence</button>
+        <div class="planche" id="planche">
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+            <div class="cellule" data-cellule></div>
+          </div>
+          <div class="message-gagnant" id="messagegagnant">
+            <div data-winning-message-text></div>
+            <button id="Buttonrecommencer" onclick="lancerpartie()">Recommence</button>
+          </div>
+    </div>
+
+    <!--Animation 2-->
+
+    <div class="contenaire">
+        <h2 class="titre">Animation n°2</h2>
+    </div> 
+
+    <div class="animation-2">
+        <p> Ecrire dans le champ en dessous</p>
+        <div class="animation-2-1">
+            <p contenteditable="TRUE">Ecrit ici</p>
+        </div>
+    </div>
+
+    <!--Animation 3-->
+
+    <br/><br/><br/><br/><br/><br/>
+    <div class="contenaire">
+        <h2 class="titre">Animation n°3</h2>
+    </div>
+
+    <div class="animation-3">
+
+        <table class="table3">
+            <tr>
+                <tr style="padding-left: 41% ;  colspan="4">
+                    <form name="ecran">
+                        <input type="ecrancalculatrcice" name="ecrancalculatrcice" style="width: 268px; height: 100px; font-size: 2rem; background-color: #ecf0f1; border: none;"  >
+                    </form>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="C" onclick="effacer()"></td>
+                    <td><input class="button" type="button" value="<" onclick="retour()"></td>
+                    <td><input class="button" type="button" value="/" onclick="tocuhenum('/')"></td>
+                    <td><input class="button" type="button" value="*" onclick="tocuhenum('*')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="tocuhenum(7)"></td>
+                    <td><input class="button" type="button" value="8" onclick="tocuhenum(8)"></td>
+                    <td><input class="button" type="button" value="9" onclick="tocuhenum(9)"></td>
+                    <td><input class="button" type="button" value="-" onclick="tocuhenum('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="tocuhenum(4)"></td>
+                    <td><input class="button" type="button" value="5" onclick="tocuhenum(5)"></td>
+                    <td><input class="button" type="button" value="6" onclick="tocuhenum(6)"></td>
+                    <td><input class="button" type="button" value="+" onclick="tocuhenum('+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="tocuhenum(1)"></td>
+                    <td><input class="button" type="button" value="2" onclick="tocuhenum(2)"></td>
+                    <td><input class="button" type="button" value="3" onclick="tocuhenum(3)"></td>
+                    <td rowspan="5"><input class="button" type="button" value="=" onclick="resulat()"  style="height: 125px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="button" type="button" style="width: 130px;" value="0" onclick="insert(0)"></td>
+                    <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+                </tr>
+            </tr>
+        </table>
+    </div>
+
+    <!--Fin Animation 3-->
+
+    <!--PIED DE PAGE
+    <footer class="footer">
+        <p class="textfooter">
+            <strong>Site artiste</strong> par Quentin JUILLIARD & Corentin NIARQUIN. <br/>
+            Le code source est sous licence <a href="http://opensource.org/licenses/mit-license.php"><i class="fas fa-copyright"></i></a>. <br/>
+            Le contenu du site Web est sous licence <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fas fa-copyright"></i></a>. <br/>
+        </p>
+    </footer>
+    
+    FIN DU PIED DE PAGE-->
+
+    <script src="../srx/javascript/js.js"></script>
+    </body>
+</html>

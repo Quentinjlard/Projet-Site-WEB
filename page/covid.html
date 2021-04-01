@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr" fir="ltr">
+    <header>
+        <meta charset="utf-8">
+        <title> Actualités COVID-19</title>
+    
+        <!--- CSS--->
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link rel="stylesheet" href="../srx/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../srx/css/teamplate.css">
+        <link rel="stylesheet" href="../srx/css/covid.css">
+    
+        <!--- END CSS ---->
+    
+        <!--FONT-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <!--END FONT-->
+    
+        <!--meta SEO-->
+        <meta name="autheur" content="Quentin JUILLIARD & Corentin NIARQUIN">
+        <meta name="description" content="description du site! METTRE DES MOTS CLES!">
+        <meta name="keyswords" content="A COMPLETER">
+        <!--meta SEO-->
+        <!--MOBILE-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--MOBILE-->
+
+        <!--java image choc-->
+        <script language="javascript">
+          function afficher() {
+            document.getElementById('image').src='../srx/covid/covid1.jpg';
+          }
+          function effacer() {
+            document.getElementById('image').src='../srx/covid/covid2.jpg';
+          }
+          </script>
+         <!--java image choc-->
+         <!--java actualité-->
+         <script language="javascript">
+            function changeimage(url,objet) {
+              objet.src=url;
+            }
+        </script>
+          <!--java actualité fin-->
+          
+    </header>
+    
+    <body>
+    
+
+    <!--Navigation-->
+    <div class="block"> 
+      <header class="header">
+        <a href="../index.html" class="header-logo">Site artiste</a>
+            <nav class="header-menu">
+                <ul>
+                    <li><a href="../index.html">Acceuil</a></li>
+                    <li><a href="js.html">divers</a></li>
+                    <li><a href="../page/concert.html">Concerts</a></li>
+                    <li><a href="#">Nos artistes</a>
+                      <ul>
+                        <li><a href="../page/artiste1.html">Freeze Corleone</a></li>
+                        <li><a href="../page/artiste2.html">PNL</a></li>
+                        <li><a href="#">Artiste 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="covid.html">COVID-19</a></li>
+                    <li><a href="../TP-003/tp003.html">Localisation</a></li>
+                </ul>
+        </nav>
+    </header>
+    </div>
+    <!--Fin Navigation-->
+    
+    <!--Code du body-->
+    
+    <h2 class="covidtitre"><strong>Les actualités liées au COVID-19</strong></h2>
+   <div class="maj">
+    <p id="demo">Les dernières nouvelles disponibles ( Sortie au 12/12/2020 )</p>
+    <div class="bouton" class="button"><button type="button" class="button" onclick='document.getElementById("demo").innerHTML = "Les derniers chiffres épidémiques confirment depuis plusieurs jours une stagnation de la décroissance : près de 14 000 nouveaux cas ont encore été recensés lors du dernier bilan de Santé publique France ce samedi, et 199 morts dans les hôpitaux. Un chiffre à retenir (plus encourageant) : le nombre de personnes en réanimation est passé sous la barre des 3 000."'>Découvrir la suite</button></div>
+  </div>
+
+  <div class="imagec">
+    <table>
+      <td width="400">
+        <div class="case1">Cliquer <a href="javascript:afficher()">ici</a> pour afficher la véritable image. Attention elle peut choquer la sensibilité des plus jeunes.</div>
+      </td>
+      <td width="600">
+        <img src="../srx/covid/hop.jpg" id="image">
+      </td>
+      <td width="400">
+        <div class="texteimagedroite">Cliquer <a href="javascript:effacer()">ici</a> pour afficher la représentation conventionnelle du virus.</div>
+      </td>
+    </table>
+  </div>
+  <hr class="sep">
+  <div class="actua">
+    <div class="titreactu">Passer la souris sur l'une des cases ci-dessous pour accéder aux differentes données récente sur la pandémie :</div>
+      <div class="tabactu">
+       <table width="1400" cellspacing="1">
+         <tr>
+           <td>
+             <img src="../srx/covid/blanc.jpg" id="img1" name="img1" onMouseOver="changeimage('../srx/covid/cap1.jpg',this)" onMouseOut="changeimage('../srx/covid/blanc.jpg',this)">
+           </td>
+           <td>
+              <img src="../srx/covid/blanc.jpg" id="img2" name="img2" onMouseOver="changeimage('../srx/covid/cap2.jpg',this)" onMouseOut="changeimage('../srx/covid/blanc.jpg',this)">
+           </td>
+           <td>
+             <img src="../srx/covid/blanc.jpg" id="img3" name="img3" onMouseOver="changeimage('../srx/covid/cap3.jpg',this)" onMouseOut="changeimage('../srx/covid/blanc.jpg',this)">
+          </td>
+           </tr>
+     </table>
+   </div>
+       <p class="quizztitre"><strong>Petit Quizz sur les bons réflexes à adopter pour se protéger de toutes contaminations</strong></p>
+       <p class="qquizz">Au bout de combien de temps je dois absolument changer mon masque ?</p>
+       <p id="quiz" style="display:none">Toutes les 4 heures maximum.</p>
+    
+    <form name="QCM">
+      <input type="radio" name="choix" value="choix1"/>Après 3 heures d'utilisation<br/>
+      <input type="radio" name="choix" value="choix2"/>Après 4 heures d'utilisation<br/>
+      <input type="radio" name="choix" value="choix3"/>Après 5 heures d'utilisation<br/><br/>
+      <input type="button" class="button"  value="Valider" onclick="tester(this.form.choix)"/><br/><br/>
+    </form>
+
+      <div >Correction :</div>
+      <div id="text"></div>
+  
+    <p class="qquizz">Que dois-je faire en cas de symptomes ?</p>
+    <p id="quiz2" style="display:none">Prendre rendez-vous au plus vite chez mon médecin et me signaler aux autorités.</p>
+    <form>
+      <textarea name="nom" rows=2 cols=40>Votre réponse</textarea>
+    </form>
+    <div class="boutonquizz">
+    <button class="button" type="button" onclick="document.getElementById('quiz2').style.display='block'">Voir la réponse</button>
+  
+    <p class="qquizz">Quelle est la durée minimale pour bien se laver les mains sous l'eau ?</p>
+    <p id="quiz3" style="display:none">Il faut se laver les mains avec le savon pendant 30 secondes pour élimier efficacement les microbes. </p>
+    <form>
+      <textarea name="nom" rows=2 cols=40>Votre réponse</textarea>
+    </form>
+    <div class="boutonquizz">
+    <button class="button" type="button" onclick="document.getElementById('quiz3').style.display='block'">Voir la réponse</button>
+  </div>
+
+  </div>
+   
+    
+
+
+    <!--Fin du code du body-->
+    <!--PIED DE PAGE-->
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <strong>Site artiste</strong> par Quentin JUILLIARD & Corentin NIARQUIN</a>. <br/>
+            Le code source est sous licence <a href="http://opensource.org/licenses/mit-license.php"><i class="fas fa-copyright"></i></a>. <br/>
+            Le contenu du site Web est sous licence <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fas fa-copyright"></i></a>. <br/>
+          </p>
+        </div>
+      </footer>
+    
+    <!--FIN DU PIED DE PAGE-->
+
+    <script type="text/javaScript">
+
+      function modifierText(texte){
+          document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+      };
+      
+      
+      function tester(reponse){
+      if (reponse[1].checked){ 
+        modifierText("Bonne réponse : Après 4 heures d'utilisation !");
+      }else{
+        modifierText("Mauvaise réponse : La bonne réponse était après 4 heures d'utilisations !");
+      }
+      return false;
+      }
+
+    </script>
+    </body>
+</html>
